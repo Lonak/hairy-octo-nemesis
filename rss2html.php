@@ -32,7 +32,7 @@ $XMLfilename = "sample.xml";
 // If TEMPLATE is passed as part of the URL. TEMPLATE=, then it will be used
 // otherwise the the file below is used.
 //$TEMPLATEfilename = "http://examlple.com/sample-template.html";
-$TEMPLATEfilename = "sample-template.html";
+$TEMPLATEfilename = "rss-template.html";
 
 //
 // Since some feeds may have titles or descriptins in the feed or items that
@@ -60,7 +60,7 @@ $ShortTimeFormat = "h:i A";     // ie, "1:24 PM"
 // below code.  Just uncomment the following line and change to the correct
 // zonename.  A full list is available here, http://www.php.net/manual/en/timezones.php
 // You town.city probably isn't listed, so look for a neighboring major city
-// putenv("TZ=America/New_York");
+putenv("TZ=Europe/Dublin");
 
 //
 // Registered user of FeedForAll and FeedForAll Mac product(s) have access
