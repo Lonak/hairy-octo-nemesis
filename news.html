@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Aurélien Mouliets">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Rappelz News</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pocket Rappelz</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+			<li class="active"><a href="news.html">Latest News</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container theme-showcase" role="main">
+	<br><br><br>
+	
+		<!-- Loading before the RSS comes up -->
+		<script src="http://padolsey.net/p/Sonic/repo/src/sonic.js"></script>
+		<script>
+var loadsonic = new Sonic({
+	
+	width: 100,
+	height: 100,
+	
+	backgroundColor: 'none',
+			
+	stepsPerFrame: 2,
+	trailLength: 1,
+	pointDistance: 0.01,
+	fps: 25,
+
+	setup: function() {
+		this._.lineWidth = 10;
+	},
+
+	step: function(point, i, f) {
+
+		var progress = point.progress,
+			degAngle = 360 * progress,
+			angle = Math.PI/180 * degAngle,
+			angleB = Math.PI/180 * (degAngle - 180),
+			size = i*5;
+			
+		this._.fillStyle = 'red';
+
+		this._.fillRect(
+			Math.cos(angle) * 25 + (50-size/2),
+			Math.sin(angle) * 15 + (50-size/2),
+			size,
+			size
+		); 
+
+		this._.fillStyle = 'blue';
+
+		this._.fillRect(
+			Math.cos(angleB) * 45 + (50-size/2),
+			Math.sin(angleB) * 25 + (50-size/2),
+			size,
+			size
+		);
+        
+        this._.fillStyle = 'yellow';
+
+    	this._.fillRect(
+			Math.cos(angleB) * 10 + (50-size/2),
+			Math.sin(angleB) * 5 + (50-size/2),
+			size,
+			size
+		);
+
+		if (point.progress == 1) {
+
+			this._.globalAlpha = f < .5 ? 1-f : f;
+
+			this._.fillStyle = 'green';
+
+			this._.beginPath();
+			this._.arc(50, 50, 5, 0, 360, 0);
+			this._.closePath();
+			this._.fill();
+
+		}
+
+
+	},
+
+	path: [
+		['line', 0, 0, 1, 1] // stub -- not actually rendered
+	]
+	
+});
+
+loadsonic.play();
+document.body.appendChild(loadsonic.canvas);
+		</script>
+
+		<!-- RSS feed -->
+		<div id="stuffholder"></div>
+		<script type="text/javascript" language="javascript" src="http://www.rssdog.com/index.htm?url=http%3A%2F%2Frss.gpotato.eu%2F%3Flng%3Dfr%26game%3Drappelz&amp;mode=javascript&amp;showonly=&amp;maxitems=0&amp;showdescs=1&amp;desctrim=0&amp;descmax=0&amp;tabwidth=100%25&amp;showdate=1&amp;linktarget=_blank&amp;bordercol=%23d4d0c8&amp;headbgcol=%23999999&amp;headtxtcol=%23ffffff&amp;titlebgcol=%23f1eded&amp;titletxtcol=%23000000&amp;itembgcol=%23ffffff&amp;itemtxtcol=%23000000&amp;ctl=0">
+		</script>
+		<noscript>
+			<!-- OFFLINE alert message -->
+			<div class="alert alert-danger">
+			<strong>By the Witch!</strong> It seems that either:<br>
+				<div class="row">
+					<div class="col-sm-4">
+						<ul class="list-group">
+							<li class="list-group-item">your magical flow known as data connexion is missing. Try enabling 2G/3G/4G or WiFi.</li>
+							<li class="list-group-item">your browser doesn't accept JavaScript or JavaScript is disabled. Are you sure you use a smartphone? :)</li>
+						</ul>
+					</div><!-- /.col-sm-4 -->
+				</div>
+			</div>
+		</noscript>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
+</html>
