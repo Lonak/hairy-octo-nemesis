@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.lonak.hello-world"
-        version   = "1.0.1">
+        id        = "com.mouliets.pocketrappelz"
+        version   = "1.1.0">
 
-    <name>Hello World</name>
+    <name>Pocket Rappelz</name>
 
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Pocket Rappelz is your direct access to the latest news of Rappelz. The best of it? It doesn't kill your data plan!
     </description>
 
-    <author href="#" email="lonak@lonak.com">
-        Lonak
+    <author href="#" email="amouliets@gmail.com">
+        Aurélien Mouliets
     </author>
 
     <!--
