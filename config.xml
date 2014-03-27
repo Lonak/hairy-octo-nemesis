@@ -87,10 +87,10 @@
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" /> -->
     <!-- Splash Android test -->
-    <gap:splash src="https://f.cloud.github.com/assets/1711585/2523549/e2327270-b4d2-11e3-834d-f67002e1ab94.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="https://f.cloud.github.com/assets/1711585/2523549/e2327270-b4d2-11e3-834d-f67002e1ab94.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="https://f.cloud.github.com/assets/1711585/2523549/e2327270-b4d2-11e3-834d-f67002e1ab94.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="https://f.cloud.github.com/assets/1711585/2523549/e2327270-b4d2-11e3-834d-f67002e1ab94.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="icon.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="icon.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="icon.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="icon.png" gap:platform="android" gap:density="xhdpi" />
     <gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
