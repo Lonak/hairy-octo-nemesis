@@ -1,0 +1,9 @@
+#rss-item {
+	text-align: justify;
+	text-transform : uppercase;
+}
+
+#rss-date {
+	border-style: dashed;
+	color: red;
+}
