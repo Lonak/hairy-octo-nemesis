@@ -50,7 +50,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  color: #df4b01;
 }
 dfn {
   font-style: italic;
@@ -175,6 +175,7 @@ table {
   }
   a,
   a:visited {
+      color: #DF7401;
     text-decoration: underline;
   }
   a[href]:after {
@@ -272,11 +273,11 @@ textarea {
 }
 a {
   color: #df4b01;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover,
 a:focus {
-  color: #933101;
+  color: #df4b01;
   text-decoration: underline;
 }
 a:focus {
@@ -419,11 +420,18 @@ h6 {
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 22px;
+    color: #ff9600;
+    font-family: Times New Roman;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 h2,
 .h2 {
-  font-size: 30px;
+    color: #ea803e;
+    font-family: Times New Roman;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 h3,
 .h3 {
@@ -4607,6 +4615,7 @@ a.list-group-item:focus {
 }
 .panel-body {
   padding: 15px;
+    background-color: #1c1b17;
 }
 .panel-body:before,
 .panel-body:after {
@@ -4724,32 +4733,32 @@ a.list-group-item:focus {
   border-bottom-color: #df4b01;
 }
 .panel-success {
-  border-color: #d6e9c6;
+  border-color: #5e4529;
 }
 .panel-success > .panel-heading {
   color: #468847;
   background-color: #dff0d8;
-  border-color: #d6e9c6;
+  border-color: #5e4529;
 }
 .panel-success > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #d6e9c6;
+  border-top-color: #5e4529;
 }
 .panel-success > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #d6e9c6;
+  border-bottom-color: #5e4529;
 }
 .panel-warning {
-  border-color: #fbeed5;
+  border-color: #5e4529;
 }
 .panel-warning > .panel-heading {
   color: #c09853;
   background-color: #fcf8e3;
-  border-color: #fbeed5;
+  border-color: #5e4529;
 }
 .panel-warning > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #fbeed5;
+  border-top-color: #5e4529;
 }
 .panel-warning > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #fbeed5;
+  border-bottom-color: #5e4529;
 }
 .panel-danger {
   border-color: #eed3d7;
@@ -4766,18 +4775,18 @@ a.list-group-item:focus {
   border-bottom-color: #eed3d7;
 }
 .panel-info {
-  border-color: #bce8f1;
+  border-color: #5e4529;
 }
 .panel-info > .panel-heading {
   color: #3a87ad;
   background-color: #d9edf7;
-  border-color: #bce8f1;
+  border-color: #5e4529;
 }
 .panel-info > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #bce8f1;
+  border-top-color: #5e4529;
 }
 .panel-info > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #bce8f1;
+  border-bottom-color: #5e4529;
 }
 .well {
   min-height: 20px;
@@ -5897,4 +5906,28 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+/* More custom stuff */
+.btn-rappelz {
+    display: inline-block;
+    text-transform:uppercase;
+    border: 1px solid #a35b00;
+    line-height: 19px;
+    height: 20px;
+    padding: 0 10px 0 10px;
+    background-color: #4d2100;
+    color: #ffba77;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    /* image as download now stuff? 
+    background-image: url(http://simg.gpotato.eu/rappelz/2012/common/bg/bg_playBtn.png)no-repeat -7px top;
+    */
+}
+.rss-date {
+	color: #695C54;
+    font-size: 11px;
+    font-style: italic;
+}
+.rss-item {
+	text-align: justify;
 }
